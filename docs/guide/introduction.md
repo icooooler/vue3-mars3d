@@ -7,7 +7,8 @@
 * 如果觉得好用欢迎 [star](https://github.com/icooooler/vue3-mars3d/stargazers)
   和 [pr](https://github.com/icooooler/vue3-mars3d/pulls)。
 * 暂未覆盖所有Mars3D的功能，后续会持续更新，可以使用 [VmViewer](../viewer/quick-start/)
-组件返回的map实例参照 [Mars3d文档](http://mars3d.cn/) 进行相应功能开发。
+  组件返回的map实例参照 [Mars3d文档](http://mars3d.cn/) 进行相应功能开发。
+* 本站demo示全部使用TS进行展示，如果使用JS自行删除TS相关代码即可
   :::
 
 ::: danger 注意

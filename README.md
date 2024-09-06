@@ -6,7 +6,7 @@
 
 ## Getting Started | [简体中文](./README.zh.md)
 
-You can find for more details, API, and other docs on [https://zouyaoji.top/vue-cesium/#/](https://zouyaoji.top/vue-cesium/#/)
+You can find for more details, API, and other docs on [http://zerolu.ddns.net:5173](http://zerolu.ddns.net:5173)
 
 ## Install
 
@@ -52,7 +52,7 @@ import 'vue3-mars3d/dist/style.css'
 </template>
 
 <script setup lang="ts">
-import { VmViewer } from 'vue3-mars3d
+import { VmViewer } from 'vue3-mars3d'
 
 </script>
 

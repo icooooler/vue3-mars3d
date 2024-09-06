@@ -7,7 +7,7 @@ import * as mars3d from 'mars3d'
 import { inject, getCurrentInstance, watch, onUnmounted, onMounted } from 'vue'
 import type { ComponentInternalInstance } from 'vue'
 import { useMap } from '../../composables/useMap'
-import type { BaseClass, Cesium, ChinaCRS, CRS, layer, Map } from 'mars3d'
+import type { BaseClass, ChinaCRS, CRS, layer, Map, Cesium } from 'mars3d'
 import { filter } from '../../utils/propsUtil'
 
 
@@ -96,6 +96,7 @@ const initComponent = () => {
     layer = new mars3d.layer.TdtLayer(filter(props) as object)
 
     map.addLayer(layer)
+
 }
 
 watch(() => props, () => {

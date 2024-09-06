@@ -42,12 +42,20 @@ export default defineConfig({
                         { text: '高德', link: '/base-layer/gaode/' },
                         { text: '百度', link: '/base-layer/baidu/' },
                         { text: '星图地球', link: '/base-layer/geovisearth/' },
+                        { text: '微软Bing地图', link: '/base-layer/bing/' },
+                        { text: 'MapBox', link: '/base-layer/mapbox/' },
+                        { text: 'ArcGis', link: '/base-layer/arcgis/' },
+                        { text: 'Cesium Ion', link: '/base-layer/cesium/' },
+                        { text: 'Google地图', link: '/base-layer/google/' },
                     ]
                 },
                 {
                     text: '地图控件',
                     items: [
-                        { text: '下侧状态栏', link: '/control/location-bar/' }
+                        { text: '下侧状态栏', link: '/control/location-bar/' },
+                        { text: '导航球', link: '/control/compass/' },
+                        { text: '比例尺', link: '/control/distance-legend/' },
+                        { text: '缩放 ', link: '/control/zoom/' },
                     ]
                 }
             ]

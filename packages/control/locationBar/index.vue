@@ -40,21 +40,29 @@ const props = withDefaults(defineProps<LocationBarProps>(), {
     enabled: true
 })
 
-
 onMounted(() => {
     registerComponents(getCurrentInstance() as ComponentInternalInstance)
 })
+
+const emits = defineEmits<{
+    (e: 'change', event: Event): void
+    (e: 'ready', control: mars3d.control.LocationBar): void
+}>()
 
 let map: mars3d.Map
 let locationBar: mars3d.control.LocationBar
 const initComponent = () => {
 
-    locationBar = new mars3d.control.LocationBar(filter(props))
+    locationBar = new mars3d.control.LocationBar(filter(props) as LocationBarProps)
+
+    emits('ready', locationBar)
+
+    locationBar.on(mars3d.EventType.change, (event) => {
+        emits('change', event)
+    })
 
     map = getMapInstance()
     map.addControl(locationBar)
-
-    console.log(map.container)
 }
 
 watch(() => props, (val) => {
@@ -62,8 +70,10 @@ watch(() => props, (val) => {
 }, {deep: true})
 
 watch(() => props.show, (val) => {
-    if (!val) {
-        locationBar.destroy()
+    if (val) {
+        map.addControl(locationBar)
+    } else {
+        map.removeControl(locationBar)
     }
 })
 

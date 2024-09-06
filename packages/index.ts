@@ -6,9 +6,34 @@ import VmTdtLayer from './baseLayer/tdtILayer'
 import VmGaodeLayer from './baseLayer/gaodeLayer'
 import VmBaiduLayer from './baseLayer/baiduLayer'
 import VmGeoVisEarthLayer from './baseLayer/geovisearthLayer'
+import VmBingLayer from './baseLayer/bingLayer'
+import VmMapboxLayer from './baseLayer/mapbox'
+import VmCesiumLayer from './baseLayer/cesium'
+import VmArcgisLayer from './baseLayer/arcgis'
+import VmGoogleLayer from './baseLayer/google'
 import VmLocationBar from './control/locationBar'
+import VmCompass from './control/compass'
+import VmDistanceLegend from './control/distanceLegend'
+import VmZoom from './control/zoom'
+import VmOverview from './control/overview'
 
-const components = [VmViewer, VmTdtLayer, VmGaodeLayer, VmBaiduLayer, VmGeoVisEarthLayer, VmLocationBar]
+const components = [
+    VmViewer,
+    VmTdtLayer,
+    VmGaodeLayer,
+    VmBaiduLayer,
+    VmGeoVisEarthLayer,
+    VmLocationBar,
+    VmBingLayer,
+    VmMapboxLayer,
+    VmCesiumLayer,
+    VmArcgisLayer,
+    VmGoogleLayer,
+    VmCompass,
+    VmDistanceLegend,
+    VmZoom,
+    VmOverview,
+]
 
 const VmMars3d = {
     install: (app: any) => {
@@ -25,6 +50,15 @@ export {
     VmBaiduLayer,
     VmGeoVisEarthLayer,
     VmLocationBar,
+    VmBingLayer,
+    VmMapboxLayer,
+    VmCesiumLayer,
+    VmArcgisLayer,
+    VmGoogleLayer,
+    VmCompass,
+    VmDistanceLegend,
+    VmZoom,
+    VmOverview,
 }
 
 export default VmMars3d

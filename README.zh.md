@@ -52,7 +52,7 @@ import 'vue3-mars3d/dist/style.css'
 </template>
 
 <script setup lang="ts">
-import { VmViewer } from 'vue3-mars3d
+import { VmViewer } from 'vue3-mars3d'
 
 </script>
 

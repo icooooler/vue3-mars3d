@@ -92,6 +92,7 @@ const emits = defineEmits<{
     (e: 'contextMenuClick', event: Event): void
     (e: 'updateControl', event: Event): void
     (e: 'zoom', event: Event): void
+    (e: 'addControl', event: Event): void
     (e: 'removeControl', event: Event): void
 }>()
 

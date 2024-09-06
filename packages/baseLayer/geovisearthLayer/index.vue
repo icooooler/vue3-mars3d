@@ -7,9 +7,8 @@ import * as mars3d from 'mars3d'
 import { inject, getCurrentInstance, watch, onUnmounted, onMounted } from 'vue'
 import type { ComponentInternalInstance } from 'vue'
 import { useMap } from '../../composables/useMap'
-import type { BaseClass, Cesium, ChinaCRS, layer, Map } from 'mars3d'
+import type { BaseClass, Cesium, ChinaCRS, layer, Map, CRS } from 'mars3d'
 import { filter } from '../../utils/propsUtil'
-import type { CRS } from 'mars3d'
 
 
 const mapKey = inject<symbol>('mapKey') as symbol
