@@ -6,7 +6,7 @@
 
 ## 快速开始 | [English](./README.md)
 
-详细使用文档 [https://zouyaoji.top/vue-cesium/#/](https://zouyaoji.top/vue-cesium/#/)
+详细使用文档 [http://zerolu.ddns.net:5173](http://zerolu.ddns.net:5173)
 
 ## 安装
 
